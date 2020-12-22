@@ -13078,8 +13078,11 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="NOTA">NOTA<a class="anchor-link" href="#NOTA">&#182;</a></h1><p><a href="https://github.com/Lud-T/Test-a-Perceptual-Phenomenon">My GitHub</a></p>
-<p><strong>What's new :</strong></p>
-<p>First submission</p>
+<p><strong>Second submission</strong></p>
+<p><strong>What's new :</strong>
+I have updated the answer of the question 2a.<br>
+<a href="#2">What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform?</a></p>
+<p>I focused the answer on mean and the population and translate them into mathematical statement.</p>
 <p>Go to projet <li><a href="#summary">Summary</a></li></p>
 
 </div>
@@ -13131,6 +13134,9 @@ Time to read the text.</p>
 <p><a id='2'></a></p>
 <h1 id="2---What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?">2 - What is an appropriate set of hypotheses for this task? What kind of statistical test do you expect to perform?<a class="anchor-link" href="#2---What-is-an-appropriate-set-of-hypotheses-for-this-task?-What-kind-of-statistical-test-do-you-expect-to-perform?">&#182;</a></h1><p><em>Now it’s your chance to try out the Stroop task for yourself. Go to this <a href="https://faculty.washington.edu/chudler/java/ready.html">https://faculty.washington.edu/chudler/java/ready.html</a> , which has a Java-based applet for performing the Stroop task. Record the times that you received on the task (you do not need to submit your times to the site.) Now, download this dataset <a href="https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&amp;sa=D&amp;ust=1608031185902000&amp;usg=AOvVaw3GlV3MCimu4I4pVT-12sK8">https://www.google.com/url?q=https://drive.google.com/file/d/0B9Yf01UaIbUgQXpYb2NhZ29yX1U/view?usp%3Dsharing&amp;sa=D&amp;ust=1608031185902000&amp;usg=AOvVaw3GlV3MCimu4I4pVT-12sK8</a> which contains results from a number of participants in the task. Each row of the dataset contains the performance for one participant, with the first number their results on the congruent task and the second number their performance on the incongruent task. </em></p>
 <h3 id="Question-2a:-Establish-hypotheses">Question 2a: Establish hypotheses<a class="anchor-link" href="#Question-2a:-Establish-hypotheses">&#182;</a></h3><p><em>Null and alternative hypotheses are clearly stated in words and mathematically. Symbols in the mathematical statement are defined.</em></p>
+<p><strong>comments from reviewer</strong></p>
+<p><em>The Null and alternative hypotheses are not accurate, it is not clear if the hypotheses concerned about the population or the sample. It is stated "No difference in terms of time to read the text between incongruent and congruent text type", but instead the hypothesis should be concerned with the mean population time. The idea of the test is that we are using limited data (based on our samples) in order to make inferences about the populations (and the population means). We know what the sample means are, and we are trying to infer something about the population, so the null and alternative hypotheses should be concerned with the population. The link here includes an example for the null and alternative hypotheses. <a href="https://courses.lumenlearning.com/introstats1/chapter/null-and-alternative-hypotheses/">https://courses.lumenlearning.com/introstats1/chapter/null-and-alternative-hypotheses/</a></em>
+<em>Please include also the mathematical statement of the hypothesis.</em></p>
 <li><a href="#summary">back to summary</a></li>
 </div>
 </div>
@@ -13138,10 +13144,14 @@ Time to read the text.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Null hypothesis :</strong><br>
-No difference in terms of time to read the text between incongruent and congruent text type.</p>
-<p><strong>Alternative hypothesis :</strong><br>
-There is a significative difference when reading two type of text : incongruent or congruent.</p>
+<p>µC : mean time to read from the for Congruent words
+µI : mean time to read for Incongruent words</p>
+<p><strong>Null hypothesis : H0</strong><br>
+No difference between the mean time to read of the two groups.</p>
+<p>H0 : µC = µI</p>
+<p><strong>Alternative hypothesis : Ha</strong><br>
+There is a significative difference between the mean time to read of the two groups.</p>
+<p>H0 : µC != µI</p>
 
 </div>
 </div>
@@ -13682,11 +13692,11 @@ Estimation d’une moyenne par intervalle de confiance – Théorie</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">call</span>
-<span class="n">call</span><span class="p">([</span><span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="s1">&#39;-m&#39;</span><span class="p">,</span> <span class="s1">&#39;nbconvert&#39;</span><span class="p">,</span> <span class="s1">&#39;Project3&#39;</span><span class="p">])</span>
+<span class="n">call</span><span class="p">([</span><span class="s1">&#39;python&#39;</span><span class="p">,</span> <span class="s1">&#39;-m&#39;</span><span class="p">,</span> <span class="s1">&#39;nbconvert&#39;</span><span class="p">,</span> <span class="s1">&#39;Projet3&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -13699,13 +13709,13 @@ Estimation d’une moyenne par intervalle de confiance – Théorie</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>4294967295</pre>
+<pre>0</pre>
 </div>
 
 </div>
